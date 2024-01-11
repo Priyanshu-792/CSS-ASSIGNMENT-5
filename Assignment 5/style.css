@@ -1,0 +1,379 @@
+/* Variable declarations for color values with global scope */
+:root {
+  --Light-Blue: #ddf0ff;
+  --Light-Green: #68edb6;
+  --Dark-Blue-0: #1095ff;
+  --Dark-Blue-1: #0780e0;
+  --Dark-Green-1: #00bc6e;
+  --Dark-Green-2: #019558;
+  --Light-Pink-1: #ff4cf6;
+  --Light-Green-2: #009f7b;
+  --Dark-Yellow-1: #ffc31b;
+  --Light-Blue-1: #4c8aff;
+  --Light-Grey-1: #515151;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  height: 100vh; /* 100% of the viewport height */
+}
+
+#menu_bar {
+  align-items: flex-end; /* Align items to the end of the flex container */
+  position: absolute; /* Positioned absolutely within its containing element */
+  right: 20px;
+  display: none; /* Initially hidden */
+  padding: 8px 18px;
+  box-shadow: 0px 0px 2px rgb(255, 255, 255); /* Shadow effect with a subtle white color */
+  border-radius: 5px; /* Rounded corners with a 5-pixel radius */
+}
+
+/* Styling for the navigation bar */
+nav {
+  background-color: rgb(19, 18, 18);
+  display: flex; /* Display as a flex container */
+  align-items: center; /* Align items to the center vertically */
+}
+
+/* Styling for the navigation menu */
+nav ul {
+  display: flex;
+  padding: 15px;
+  width: -moz-fit-content;
+  width: fit-content; /* Set the width to fit its content */
+  align-items: center;
+}
+
+nav ul {
+  margin-left: 9%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+/* Styling for navigation links */
+nav ul li a,
+li a {
+  text-decoration: none; /* Remove underlines from anchor tags */
+  color: black;
+  padding: 12px 10px;
+  font-weight: 800;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s; /* Apply a smooth transition for all properties over 0.5 seconds */
+}
+
+/* Styling for the logo in the navigation bar */
+#img_logo {
+  margin: 0 15px 0 0;
+}
+
+/* Styling for the first section of the page */
+.section-first {
+  height: 630px;
+  background-color: var(--Light-Blue);
+  display: flex; /* Display as flex containers */
+}
+
+/* Styling for the wrapper within the first section */
+.section-first-wrapper {
+  height: 70%;
+  width: 80%;
+  margin: auto;
+  display: flex; /* Display as flex containers */
+}
+
+/* Styling for the left and right content within the first section */
+.section-first-left,
+.section-first-right {
+  height: 80%;
+  width: 60%;
+  display: flex; /* Display as flex containers */
+  flex-wrap: wrap; /* Allow content to wrap to the next line if needed */
+}
+
+.section-first-right {
+  width: 40%;
+  height: 100%;
+}
+
+.section-first-left,
+.section-first-left button {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.section-first-left h1 {
+  margin: 10px 0 0 0; /* Shorthand: top, right, bottom, left */
+  font-size: 35px;
+}
+
+.section-first-right img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
+  background-position: center;
+  transition: all 0.6s; /* Apply a smooth transition for all properties over 0.6 seconds */
+}
+
+.button-container .fa-solid.fa-angles-right {
+  opacity: 0; /* Set initial opacity to 0 (invisible) */
+  transition: opacity 0.5s ease; /* Apply a smooth transition for opacity over 0.5 seconds with ease-in-out timing function */
+}
+
+.section-first-left button,
+.section-second-right button {
+  height: 40px;
+  background-color: var(--Dark-Blue-0);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
+  color: white;
+  border: none;
+  transition: all 0.3s; /* Apply a smooth transition for all properties over 0.3 seconds */
+  font-size: 18px;
+}
+
+/* Styling for the second section of the page */
+.section-second-wrapper {
+  height: 70%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.section-second {
+  height: 630px;
+  width: auto;
+  background-color: var(--Light-Green);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styling for the left and right content within the second section */
+.section-second-left,
+.section-second-right {
+  height: 100%;
+  font-size: 15px;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-second-right {
+  width: 60%;
+  height: 80%;
+  margin-left: 30px;
+}
+
+.section-second-left img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  transition: all 0.6s;
+}
+
+.section-second-right button {
+  background-color: var(--Dark-Green-1);
+}
+
+/* Styling for the third section of the page */
+.section-third {
+  height: auto; /* Set height to auto, allowing it to adjust based on content */
+  width: 100%;
+  display: flex; /* Display as a flex container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  align-items: center; /* Align items to the center vertically */
+  flex-wrap: wrap; /* Allow content to wrap to the next line if needed */
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Styling for individual boxes within the third section */
+.box {
+  height: 280px;
+  width: 225px;
+  margin: 50px 20px 50px 20px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 1s;
+}
+
+/* Styling for specific items within the boxes */
+.box-iteam1,
+.box-iteam2,
+.box-iteam3,
+.box-iteam4,
+.box-iteam5 {
+  border: 1px solid var(--Light-Pink-1);
+  padding: 20px;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 18px;
+  height: 20px;
+  width: 20px;
+}
+
+.box-iteam2 {
+  border: 1px solid var(--Dark-Green-1);
+}
+
+.box-iteam3 {
+  border: 1px solid var(--Dark-Yellow-1);
+}
+
+.box-iteam4 {
+  border: 1px solid var(--Light-Blue-1);
+}
+
+.box-iteam5 {
+  border: 1px solid var(--Light-Grey-1);
+}
+
+/* Styling for the footer section */
+footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: var(--Light-Grey-1);
+  display: flex; /* Display as a flex container */
+  justify-content: space-evenly; /* Distribute content evenly along the main axis */
+}
+
+/* Styling for individual containers within the footer */
+footer .container {
+  height: 80%; /* Set the height of the container relative to its parent */
+  width: 300px; /* Set the width of the container */
+  margin: 50px 10px 30px 50px; /* Margin values (top, right, bottom, left) */
+  display: flex; /* Display as a flex container */
+  flex-direction: column; /* Set the flex direction to column */
+  color: rgb(255, 255, 255); /* Text color */
+}
+
+/* Styling for anchor tags within the container */
+.container a {
+  margin-top: 10px; /* Set top margin for spacing */
+  text-decoration: none; /* Remove underlines from anchor tags */
+  color: rgb(165, 165, 165); /* Default text color */
+  transition: all 0.4s; /* Apply a smooth transition for all properties over 0.4 seconds */
+}
+
+/* Styling for the first box within the footer */
+footer .box1 {
+  margin-left: 50px; /* Set left margin for spacing */
+}
+
+/* Styling for navigation links on hover */
+nav ul li a:hover {
+  background-color: white; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+
+/* Styling for the button container on hover */
+.button-container:hover button {
+  cursor: pointer; /* Set cursor to pointer on hover */
+  width: calc(122% - 0px); /* Dynamically adjust width on hover */
+}
+
+/* Styling for the right-angle icon within the button container on hover */
+.button-container:hover .fa-solid.fa-angles-right {
+  color: white; /* Text color on hover */
+  opacity: 2; /* Increase opacity on hover */
+}
+
+/* Styling for buttons within the left content of the first section on hover */
+.section-first-left button:hover {
+  background-color: var(--Dark-Blue-1); /* Background color on hover */
+}
+
+/* Styling for buttons within the right content of the second section on hover */
+.section-second-right button:hover {
+  background-color: var(--Dark-Green-2); /* Background color on hover */
+}
+
+/* Styling for images within the right content of the first section and left content of the second section on hover */
+.section-first-right img:hover,
+.section-second-left img:hover {
+  box-shadow: 5px 5px 15px black; /* Add a box shadow on hover */
+}
+
+/* Styling for the first box within the third section on hover */
+.section-third .box1:hover {
+  background-color: var(--Light-Pink-1); /* Background color on hover */
+}
+
+/* Styling for the second box within the third section on hover */
+.section-third .box2:hover {
+  background-color: var(--Dark-Green-2); /* Background color on hover */
+}
+
+/* Styling for the third box within the third section on hover */
+.section-third .box3:hover {
+  background-color: var(--Dark-Yellow-1); /* Background color on hover */
+}
+
+/* Styling for the fourth box within the third section on hover */
+.section-third .box4:hover {
+  background-color: var(--Light-Blue-1); /* Background color on hover */
+}
+
+/* Styling for the fifth box within the third section on hover */
+.section-third .box5:hover {
+  background-color: var(--Light-Grey-1); /* Background color on hover */
+}
+
+/* Styling for items within the third section with a rotating animation */
+.box-iteam1,
+.box-iteam2,
+.box-iteam3,
+.box-iteam4,
+.box-iteam5 {
+  transition: transform 1s ease-in-out; /* Apply a smooth transition for transform over 1 second with ease-in-out timing function */
+}
+
+/* Styling for the first item within the third section with a rotating animation on hover */
+.box1:hover .box-iteam1,
+.box:hover .box-iteam2,
+.box:hover .box-iteam3,
+.box:hover .box-iteam4,
+.box:hover .box-iteam5 {
+  transform: rotate(360deg); /* Rotate 360 degrees on hover */
+  transition: transform 1s ease-in-out; /* Apply a smooth transition for transform over 1 second with ease-in-out timing function */
+}
+
+/* Keyframes for a rotating animation */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg); /* Initial rotation angle */
+  }
+  50% {
+    transform: rotate(360deg); /* Rotation angle at 50% keyframe */
+  }
+  100% {
+    transform: rotate(0deg); /* Final rotation angle */
+  }
+}
+/* Styling for anchor tags within the footer on hover */
+footer a:hover {
+  color: white; /* Text color on hover */
+}/*# sourceMappingURL=style.css.map */
