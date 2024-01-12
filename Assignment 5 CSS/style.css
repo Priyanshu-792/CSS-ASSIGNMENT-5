@@ -1,0 +1,541 @@
+
+/* using colour variables for ease */
+:root {
+    --grey: #ddf0ff;
+    --lightgreen: #68edb6;
+    --lightblue1: #1095ff;
+  
+    --darkblue: #0780e0;
+    --lightgreen2: #00bc6e;
+    --darkgreen: #019558;
+    --pink: #ff4cf5;
+    --bluishgreen: #009f7b;
+    --yellow: #ffc31b;
+    --lightblue2: #4c8aff;
+    --slate: #515151;
+  }
+  
+/* HEADER STYLING */
+nav {
+    margin-top: 10px;
+    height:62px;
+    display: flex;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    padding-bottom:5px;
+    margin: 0;
+  
+ 
+  }
+nav i{
+    color:white;
+}
+  nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  a {
+    padding:5px;
+    text-decoration: none;
+    color: white;
+  }
+
+  nav li a:hover {
+    color:black;
+    border-radius: 2px;
+    background-color: white;
+    
+  }
+
+  .mobilebar{
+    color:rgb(247, 246, 246);
+margin-top:25px;
+    margin-left: auto;
+    margin-right: 20px;
+opacity:0;
+  }
+
+
+
+  /* first container styling */
+
+      .first-container {
+  background-color: var(--grey);
+  height: 30rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  /* Image container styles */
+  .img-container {
+    width: 24rem;
+    height: 70%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0 0 0 0 #ddf0ff;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    img:hover {
+      box-shadow: 5px 6px 10px 1px #6b6868;
+      cursor: pointer;
+    }
+  }
+}
+
+/* nested 1 inside first container */
+.left-container {
+    width: 49rem;
+    height: 70%;
+  }
+  /* nested 2 inside text-container */
+  .heading h1 {
+    font-weight: 400;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    line-height: 20px;
+    color: #3e3b3b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+ 
+  .button-container {
+    width: 6.2rem;
+
+    button {
+      font-size: 13px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Verdana, sans-serif;
+        height: 35px;
+      margin: 2px;
+      width: 100px;
+      padding: 5px;
+      background-color: var(--lightblue1);
+
+      color: rgb(244, 240, 240);
+      border: none;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+    .fa-solid.fa-angles-right {
+      opacity:0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  .button-container button:hover {
+    background-color: var(--darkblue);
+  }
+
+  .button-container #button-2:hover {
+    background-color: var(--darkgreen);
+  }
+
+  .button-container:hover button {
+    cursor: pointer;
+    width: 100px;
+  }
+
+  .button-container:hover .fa-solid.fa-angles-right {
+    color: white;
+    opacity:1;
+
+  }
+
+
+  /* section 2 styling */
+
+
+  .second-container{
+    background-color: var(--grey);
+    height: 39rem;
+  padding-top:3px;
+  padding-bottom:3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Text container styles in nested way */
+    .right-container {
+      width: 49rem;
+      height: 70%;
+  
+      .heading h1 {
+        font-weight: 400;
+        font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+      }
+  
+      .paragraph {
+        font-size: 14px;
+        line-height: 20px;
+        color: #3e3b3b;
+        font-family: Verdana, Tahoma, sans-serif;
+      }
+  
+      #content-2 {
+        width: 46rem;
+        margin-top: 13px;
+      }
+  /* Button container styles */
+      .button-container {
+       
+        button {
+          font-size: 13px;
+          /* font-family: sans-serif; */
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Verdana, sans-serif;
+          width: 96px;
+          padding: 4px;
+          height: 35px;
+          margin-top: 15px;
+          background-color: var(--lightblue1);
+    
+          color: white;
+          border: none;
+          border-radius: 4px;
+          transition: width 0.3s ease;
+        }
+        width: 6.2rem;
+        .fa-solid.fa-angles-right {
+          opacity: 0;
+          /* Initially hide the icon */
+          transition: opacity 0.3s ease;
+          /* Add smooth transition effect */
+        }
+      }
+  
+   
+      /* Hover styles for buttons */
+      .button-container button:hover {
+        background-color: var(--darkblue);
+      }
+  
+      .button-container #button-2:hover {
+        background-color: var(--darkgreen);
+      }
+    /* Hover styles for button container */
+      .button-container:hover button {
+        cursor: pointer;
+        width: calc(102% - 0px);
+      }
+  
+      .button-container:hover .fa-solid.fa-angles-right {
+        color: white;
+        opacity: 2;
+  
+      }
+    }
+    /* Image container styles */
+    .img-container {
+      width: 24rem;
+      height: 70%;
+  
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 0 0 0 0 #ddf0ff;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+  
+      img:hover {
+        box-shadow: 5px 6px 10px 1px #6b6868;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  
+
+
+  .second-container {
+    #second-title{
+      font-size: 20px;
+    }
+  
+    background-color: var(--lightgreen);
+  
+    height: 29rem;
+    /* Button container style for Container 3 */
+    .button-container #button-2 {
+      background-color: var(--lightgreen2);
+    }
+    /* Margin adjustment for content, title, and button container */
+    .paragraph,
+    .heading,
+    .button-container {
+      margin-left: 30px;
+    }
+  }
+
+
+
+
+
+
+
+
+  /* card styling */
+
+
+  .cardsection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .card {
+    height: 250px;
+     width: 200px;
+     margin: 50px 20px 50px 20px;
+     box-shadow: 0px 0px 2px black;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     box-sizing: border-box;
+     /* used shorthand property by me */
+     padding: 20px 25px 20px 25px;
+     cursor: pointer;
+     text-align: center;
+     transition: all 0.5s;
+  }
+
+
+  .card-i1,
+  .card-i2,
+  .card-i3,
+  .card-i4,
+  .card-i5 {
+      border: 1px solid var();
+      padding: 20px;
+      background-color: white;
+      border-radius: 100%;
+      font-size: 18px;
+      height: 20px;
+      width: 20px;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .card-i1 {
+    border: 1px solid var(--pink);
+    
+}
+
+  .card-i2 {
+    border: 1px solid var(--lightgreen2);
+}
+
+.card-i3 {
+    border: 1px solid var(--yellow);
+}
+
+.card-i4 {
+    border: 1px solid var(--lightblue2);
+}
+
+.card-i5 {
+    border: 1px solid var(--slate);
+}
+
+/* hover effect */
+
+ .card:hover .card-i1, .card:hover .card-i2, .card:hover .card-i3,.card:hover .card-i4,.card:hover
+  .card-i5{
+     transform: rotate(360deg);
+     transition: transform 1s ease-in-out;
+ }
+ 
+  .description {
+    font-size: 16px;
+  } 
+  .heading {
+    margin-top:10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Unique hover colors for each card */
+  .card:nth-child(1):hover {
+    
+    background-color: var(--pink);
+    transform: scale(1.05);
+  }
+
+  .card:nth-child(2):hover {
+   
+    background-color:var(--lightgreen2);
+    transform: scale(1.05);
+  }
+
+  .card:nth-child(3):hover {
+   
+    background-color: var(--yellow);
+    transform: scale(1.05);
+  }
+
+  .card:nth-child(4):hover {
+  
+    background-color: var(--lightblue2);
+    transform: scale(1.05);
+  }
+
+  .card:nth-child(5):hover {
+   
+    background-color:var(--slate);
+    transform: scale(1.05);
+  }
+
+  .textstyle:hover{
+    color:white;
+  }
+
+
+  /* styling footer section */
+
+  footer {
+    height: fit-content;
+    width: 100%;
+    background-color:rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .container {
+    height: 80%;
+    width: 300px;
+    margin: 50px 10px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    color:whitesmoke;
+}
+
+.container a {
+    margin-top: 10px;
+    text-decoration: none;
+    color:  rgb(182, 180, 180);
+    transition: all 0.4s;
+}
+
+footer .col1 {
+    margin-left: 50px;
+}
+
+.container a:hover{
+    cursor:pointer;
+    color: rgb(230, 226, 226);
+}
+
+
+
+
+
+
+/* now for making it responsive */
+
+
+/* tablet landscape mode */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .first-container,
+    .second-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card {
+      flex-direction: row; /* Two cards in a row */
+    }
+  
+  
+  }
+  
+  /* for tablet portrait  */
+/* Responsive Styles for Tablet Portrait */
+@media screen and (max-width: 768px) {
+    .first-container,
+    .second-container {
+      flex-direction: column;
+    }
+  
+    .left-container,
+    .right-container {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .img-container {
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    .img-container img {
+        height: auto;
+        max-width: 100%;
+      }
+  
+      .cardsection {
+          flex-direction: column;
+          gap: 10px;
+        }
+      
+        .card {
+          width: 50%;
+          max-width: none;
+        }
+        footer {
+          flex-direction: row;
+           text-align: center;
+        }
+      
+        .container {
+           max-width: none;
+          margin-bottom: 20px; /* Adjust the margin as needed */
+        }
+  }
+  
+ 
+  
+
+  /* for mobile view */
+  @media only screen and (min-width: 480px) {
+
+    section, footer{
+        display:flex;
+        flex-direction:row;
+    }
+    ul.active {
+      display: flex;
+      flex-direction: row; /* Updated for mobile view */
+      position: static;
+    }
+
+    .mobilebar{
+      opacity:1;
+    }
+  }
